@@ -23,6 +23,11 @@ public class Car {
         this.color= color;
     }
     void setPrice(int price){
-        this.price= price;
+        if (price <0){
+            System.out.println("Price cant be zero or less");
+        }else {
+            this.price= price;
+        }
     }
 }
+
