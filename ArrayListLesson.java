@@ -3,8 +3,8 @@ import java.util.Collections;
 
 public class ArrayListLesson {
     public static void main(String[] args) {
-        /*
-        Arraylist
+       /*
+        Arraylist = A resizable array that stores objects(autoboxing) Arrays are fixed in size, but ArrayLists can change 
          */
         ArrayList<Integer>list1 = new ArrayList<>();
         list1.add(1);
@@ -39,3 +39,4 @@ public class ArrayListLesson {
 
     }
 }
+
