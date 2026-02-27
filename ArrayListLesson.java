@@ -22,6 +22,7 @@ public class ArrayListLesson {
         list3.add("apple");
         list3.add("orange");
         list3.add("watermelon");
+        list3.add("lemon");
         list3.remove(2);// to remove element
         list3.set(0,"pineapple");// to modify an element
         System.out.println(list3);
