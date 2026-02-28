@@ -4,6 +4,12 @@ import java.io.IOException;
 
 public class WriteFile {
     public static void main(String[] args) {
+        /*
+FileWriter = good for small or medium-sized text files
+BufferedWriter = better performance for large amounts of text
+PrintWriter = best for structured data like reports or logs
+FileOutputStream = best for binary files(e.g images audio files)
+ */
         // program to write a simple txt file
         // declare variables
         String filePath = "C:\\Users\\Desktop\\test.txt";
@@ -32,3 +38,4 @@ public class WriteFile {
         }
     }
 }
+
