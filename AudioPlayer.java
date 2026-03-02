@@ -27,7 +27,7 @@ public class AudioPlayer {
                 switch (respond){
                     case "P" -> clip.start();
                     case "S" -> clip.stop();
-                    case "R" -> clip.getMicrosecondPosition();
+                    case "R" -> clip.setMicrosecondPosition(0);
                     case "Q" -> respond = "Q";
                     default -> System.out.println("invalid selection");
                 }
@@ -51,3 +51,4 @@ public class AudioPlayer {
         }
     }
 }
+
