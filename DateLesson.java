@@ -23,7 +23,7 @@ public class DateLesson {
         // format it
 
         LocalDateTime dateTime1 = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("DD-MM-YYYY HH:MM:SS");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-YYYY HH:mm:SS");
         String newDateTime1 = dateTime1.format(formatter);
         System.out.println(newDateTime1);
         // place a date you can also compare
@@ -33,7 +33,9 @@ public class DateLesson {
         System.out.println(datePast2);
         if (datePast.isBefore(datePast2)) {
             System.out.println("First date older than second");
-        }else {
+        }else if (datePast.equal(datePast2)) {
+            System.out.println("First date equals second date")}
+else {
             System.out.println("Second older than the first");
         }
     }
