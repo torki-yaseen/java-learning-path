@@ -2,7 +2,12 @@ import java.util.HashMap;
 
 public class HashMapLesson {
     public static void main(String[] args) {
-
+        /*
+        HashMap = A Data structure that stores key-value pairs 
+        Keys are unique, but Values can be duplicated 
+        Does not maintain any order, but is memory efficient 
+        HashMap<Key, Value>
+         */
         HashMap<String, Double> map = new HashMap<>();
 
         map.put("orange",3.99);
@@ -32,3 +37,4 @@ public class HashMapLesson {
         }
     }
 }
+
