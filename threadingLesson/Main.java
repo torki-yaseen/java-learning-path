@@ -4,8 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-        // program asking you to input your name and give your number of second or program will exit
+        /*
+        Threading = Allow a program to run multiple takes simultaneous Help improve performance with time-consuming operations.
+        File I/O , network communications, or any background task
+         */
+        // program asking you to input your name and give your number of seconds, or program will exit
         Scanner  scanner = new Scanner(System.in);
         // create the thread runnable
         MyRunnable myRunnable = new MyRunnable();
@@ -22,3 +25,4 @@ public class Main {
         scanner.close();
     }
 }
+
