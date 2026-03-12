@@ -2,6 +2,11 @@ package multihreading;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+        Multithreading = Enables a program to run multiple threads concurrently 
+        Thread = A set of instructions that run independently
+        useful for background tasks or time-consuming operations
+         */
 //        MyRunnable myRunnable = new MyRunnable("bing");
 //        MyRunnable myRunnable2 = new MyRunnable("bong");
         Thread thread1 = new Thread(new MyRunnable("bing"));
@@ -18,3 +23,4 @@ public class Main {
         System.out.println("Game over!");
     }
 }
+
