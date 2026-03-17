@@ -3,7 +3,8 @@ public class Banking {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Banking program with javaand declare variables 
+        //Banking program with java
+        // declare variables
         double balance =0;
         int choice;
         boolean isRunning = true;
