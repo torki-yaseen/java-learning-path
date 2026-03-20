@@ -11,7 +11,7 @@ public class Main {
        Scanner scanner = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime alarmTime =null;
-
+        String filePath = "src/finalProject/alarm.wav";
         while(alarmTime == null){
             try{
                 System.out.print("Enter in alarm time(HH:MM:SS) : ");
@@ -24,5 +24,9 @@ public class Main {
                 System.out.println("Enter valid input time! Use HH:MM:SS");
             }
         }
+        AlarmClock alarmClock = new AlarmClock(alarmTime,filePath,scanner);
+        Thread alarmThread = new Thread(alarmClock);
+        alarmThread.start();
+
     }
 }
