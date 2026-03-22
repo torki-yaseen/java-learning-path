@@ -19,7 +19,7 @@ public class Main {
 
                 alarmTime= LocalTime.parse(inputTime,formatter);
                 System.out.println("Alarm set for " + alarmTime) ;
-                scanner.close();
+
             }catch (DateTimeParseException e){
                 System.out.println("Enter valid input time! Use HH:MM:SS");
             }
